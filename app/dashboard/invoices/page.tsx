@@ -7,15 +7,15 @@ import { InvoicesTableSkeleton } from '@/app/ui/skeletons';
 import { Suspense } from 'react';
  
 export default async function Page({
-  searchParamsi,
+  searchParams,
 }: {
-  searchParamsi?: {
+  searchParams?: {
     query?: string;
     page?: string;
   };
 }) {
-  const query = searchParamsi?.query || '';
-  const currentPage = Number(searchParamsi?.page) || 1;
+  const query = searchParams?.query || '';
+  const currentPage = Number(searchParams?.page) || 1;
   return (
     <div className="w-full">
       <div className="flex w-full items-center justify-between">
